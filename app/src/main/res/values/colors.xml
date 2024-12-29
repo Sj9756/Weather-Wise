@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="startColor">#2e335a</color>
+    <color name="endColor">#432789</color>
+    <color name="sub_text">#89898F</color>
+    <color name="seekbar_start">#3659b1</color>
+    <color name="seekbar_end">#e64397</color>
+</resources>

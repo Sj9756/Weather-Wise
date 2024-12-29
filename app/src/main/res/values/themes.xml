@@ -1,0 +1,63 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.WeatherWise" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="android:statusBarColor">@color/startColor</item>
+        <item name="android:navigationBarColor">@color/endColor</item>
+
+    </style>
+
+    <style name="Theme.WeatherWise" parent="Base.Theme.WeatherWise" />
+
+    <style name="main" parent="Theme.WeatherWise">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="leaner_layout" parent="Theme.WeatherWise">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="text_main" parent="Theme.WeatherWise">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="heading_text" parent="text_main">
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="sub_text" parent="text_main">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/sub_text</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CustomShapeAppearance" parent="Theme.WeatherWise">
+        <item name="neumorph_cornerFamily">rounded</item>
+        <item name="neumorph_cornerSize">32dp</item>
+        <item name="neumorph_cornerSizeTopLeft">30dp</item>
+        <item name="neumorph_cornerSizeTopRight">30dp</item>
+        <item name="neumorph_cornerSizeBottomLeft">30dp</item>
+        <item name="neumorph_cornerSizeBottomRight">30dp</item>
+    </style>
+
+    <style name="Weather_detail" parent="text_main">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Weather_detail_1" parent="text_main">
+        <item name="android:textSize">30sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>

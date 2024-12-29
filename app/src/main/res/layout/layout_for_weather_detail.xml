@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="190dp"
+        android:layout_columnWeight="1"
+        android:backgroundTint="#00FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawablePadding="10dp"
+                android:text="@string/uv_index"
+                android:textColor="@color/sub_text"
+                android:textSize="15sp"
+                app:drawableStartCompat="@drawable/ic_sun_uv"
+                app:drawableTint="@color/sub_text" />
+
+            <TextView
+                android:id="@+id/uv_point"
+                style="@style/Weather_detail"
+                android:layout_marginStart="15dp"
+                android:text="@string/_4" />
+
+
+            <TextView
+                android:id="@+id/uv_condition_text"
+                style="@style/Weather_detail"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/moderate" />
+
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/uv_condition_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:progress="20"
+                android:progressDrawable="@drawable/shape_for_uv"
+                android:splitTrack="false"
+                android:thumb="@drawable/thumb" />
+
+            <TextView
+                android:id="@+id/uv_precaution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/extra_protection"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="190dp"
+        android:layout_columnWeight="1"
+        android:backgroundTint="#00FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_sun_rise"
+                    app:tint="@color/sub_text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="8dp"
+                    android:gravity="bottom"
+                    android:text="@string/sunrise"
+                    android:textColor="@color/sub_text"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/sunrise_time"
+                style="@style/Weather_detail"
+                android:layout_marginStart="15dp"
+                android:text="@string/time" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_url="https://lottie.host/f0b31921-f392-4cb6-967a-212930346e44/m67ytK9jZt.json" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="Sunset:"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/sunset_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/_7_25pm"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="190dp"
+        android:layout_columnWeight="1"
+        android:backgroundTint="#00FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_wind"
+                    app:tint="@color/sub_text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="8dp"
+                    android:gravity="bottom"
+                    android:text="WIND"
+                    android:textColor="@color/sub_text"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/wind_speed"
+                style="@style/Weather_detail"
+                android:layout_marginStart="15dp"
+                android:text="@string/_9_7km_h" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/wind_direction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sse"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="20sp"
+                    android:layout_marginEnd="30dp"
+                    android:textColor="@color/white" />
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_url="https://lottie.host/7d3057d6-b96a-4b19-8648-97d0af875d96/Uw2zukdkiW.json" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="190dp"
+        android:layout_columnWeight="1"
+        android:backgroundTint="#00FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_rain_drop"
+                    app:tint="@color/sub_text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="8dp"
+                    android:gravity="bottom"
+                    android:text="@string/rainfall"
+                    android:textColor="@color/sub_text"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/rain_detail"
+                style="@style/Weather_detail"
+                android:layout_marginStart="15dp"
+                android:text="@string/_1_8mm" />
+
+            <TextView
+                style="@style/Weather_detail"
+                android:layout_marginStart="15dp"
+                android:text="in last hour"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="190dp"
+        android:layout_columnWeight="1"
+        android:backgroundTint="#00FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawablePadding="10dp"
+                android:text="@string/feels_like"
+                android:textColor="@color/sub_text"
+                android:textSize="15sp"
+                app:drawableStartCompat="@drawable/ic_temp"
+                app:drawableTint="@color/sub_text" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/feels_like_temp"
+                    style="@style/Weather_detail"
+                    android:layout_marginStart="15dp"
+                    android:text="@string/_19" />
+                <TextView
+                    android:id="@+id/condition_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/mostly_clear"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/location_name"
+                style="@style/Weather_detail"
+                android:layout_marginStart="15dp"
+                android:text="@string/almora"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/region_name"
+                style="@style/Weather_detail"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginStart="15dp"
+                android:text="@string/uttarakhand"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Weather_detail"
+                    android:layout_marginStart="15dp"
+                    android:text="@string/l"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/today_low"
+                    style="@style/Weather_detail"
+                    android:text="@string/_19"
+                    android:textSize="18sp" />
+
+                <TextView
+                    style="@style/Weather_detail"
+                    android:layout_marginStart="15dp"
+                    android:text="@string/h"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/today_high"
+                    style="@style/Weather_detail"
+                    android:text="@string/_19"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="190dp"
+        android:layout_columnWeight="1"
+        android:backgroundTint="#00FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_humidity"
+                    app:tint="@color/sub_text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="8dp"
+                    android:gravity="bottom"
+                    android:text="@string/humidity"
+                    android:textColor="@color/sub_text"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/humidity"
+                style="@style/Weather_detail"
+                android:layout_marginStart="15dp"
+                android:text="@string/par_19" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_url="https://lottie.host/8b459112-38c3-4d3f-8b28-3c55e306e6bf/J3YaoayEBm.json" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="190dp"
+        android:layout_columnWeight="1"
+        android:backgroundTint="#00FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawablePadding="10dp"
+                android:text="@string/visibility"
+                android:textColor="@color/sub_text"
+                android:textSize="15sp"
+                app:drawableStartCompat="@drawable/ic_visibility"
+                app:drawableTint="@color/sub_text" />
+
+            <TextView
+                android:id="@+id/visibility_text"
+                style="@style/Weather_detail"
+                android:layout_marginStart="15dp"
+                android:text="@string/_8_km" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    style="@style/Weather_detail"
+                    android:layout_marginStart="15dp"
+                    android:text="@string/date"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/date_today"
+                    style="@style/Weather_detail"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/_2024_05_27"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="190dp"
+        android:layout_columnWeight="1"
+        android:backgroundTint="#00FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawablePadding="10dp"
+                android:text="@string/pressure"
+                android:textColor="@color/sub_text"
+                android:textSize="15sp"
+                app:drawableStartCompat="@drawable/ic_pressure"
+                app:drawableTint="@color/sub_text" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_url="https://lottie.host/40b3168a-3e6c-425f-a183-e7ff073ce339/C6c2Q4vTyX.json" />
+
+            <TextView
+                android:id="@+id/pressure_text"
+                style="@style/Weather_detail"
+                android:layout_marginStart="15dp"
+                android:text="@string/_991_5mb" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</GridLayout>

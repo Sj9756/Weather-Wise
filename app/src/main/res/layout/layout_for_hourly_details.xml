@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/search"
+        android:layout_width="90dp"
+        android:layout_height="200dp"
+        app:neumorph_shapeType="flat"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_strokeColor="#3e3a80"
+        app:neumorph_strokeWidth="3dp"
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+        app:neumorph_shadowColorLight="#6D34316B"
+        app:neumorph_shadowColorDark="#66000000"
+        app:neumorph_backgroundColor="#34316b">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="@string/_12am" />
+
+            <ImageView
+                android:id="@+id/weather_condition_hourly"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/todo" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/rain_pop_hourly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prob"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="16sp"
+                    android:textColor="#40CBD8"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:id="@+id/temp_hourly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/_19"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+
+
+</LinearLayout>
