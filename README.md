@@ -15,7 +15,9 @@ This Android app allows users to get the current weather of a location by either
 - **User-Friendly Interface**: Easy-to-use interface with location search and weather details.
 
 ## Screenshots
-![App Screenshot](./assets/Screenshot_1.jpg)
+![App Screenshot](./assets/Screenshot.png)
+
+![App Screenshot](./assets/preview.gif)
 
 ## Technologies Used
 
